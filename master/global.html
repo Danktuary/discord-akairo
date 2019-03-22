@@ -806,12 +806,13 @@
     <p>The method to match arguments from text.</p>
 <ul>
 <li><code>phrase</code> matches by the order of the phrases inputted.<br>It ignores phrases that matches a flag.</li>
-<li><code>rest</code> matches the rest of the phrases in order.<br>It ignores phrases that matches a flag.<br>It also tries to preserve the original whitespace between phrases and the quotes around phrases.</li>
-<li><code>separate</code> matches the rest of the phrases in order.<br>Unlike rest, each phrase is processed separately.<br>It ignores phrases that matches a flag.</li>
 <li><code>flag</code> matches phrases that are the same as its flag.<br>The evaluated argument is either true or false.</li>
 <li><code>option</code> matches phrases that starts with the flag.<br>The phrase after the flag is the evaluated argument.</li>
-<li><code>text</code> matches the entire text, except for the command.<br>It also tries to preserve the original whitespace between phrases and the quotes around phrases.<br>It ignores phrases that matches a flag.</li>
-<li><code>content</code> matches the entire text as it was inputted, except for the command.<br>It also preserves the original whitespace between phrases and the quotes around phrases.</li>
+<li><code>rest</code> matches the rest of the phrases.<br>It ignores phrases that matches a flag.<br>It preserves the original whitespace between phrases and the quotes around phrases.</li>
+<li><code>separate</code> matches the rest of the phrases and processes each individually.<br>It ignores phrases that matches a flag.</li>
+<li><code>text</code> matches the entire text, except for the command.<br>It ignores phrases that matches a flag.<br>It preserves the original whitespace between phrases and the quotes around phrases.</li>
+<li><code>content</code> matches the entire text as it was inputted, except for the command.<br>It preserves the original whitespace between phrases and the quotes around phrases.</li>
+<li><code>restContent</code> matches the rest of the text as it was inputted.<br>It preserves the original whitespace between phrases and the quotes around phrases.</li>
 <li><code>none</code> matches nothing at all and an empty string will be used for type operations.</li>
 </ul>
 </div>
@@ -2342,7 +2343,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="struct_commands_arguments_Argument.js.html">struct/commands/arguments/Argument.js</a>, <a href="struct_commands_arguments_Argument.js.html#line570">line 570</a>
+        <a href="struct_commands_arguments_Argument.js.html">struct/commands/arguments/Argument.js</a>, <a href="struct_commands_arguments_Argument.js.html#line571">line 571</a>
     </li></ul></dd>
     
 
@@ -2459,7 +2460,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="struct_commands_arguments_Argument.js.html">struct/commands/arguments/Argument.js</a>, <a href="struct_commands_arguments_Argument.js.html#line619">line 619</a>
+        <a href="struct_commands_arguments_Argument.js.html">struct/commands/arguments/Argument.js</a>, <a href="struct_commands_arguments_Argument.js.html#line620">line 620</a>
     </li></ul></dd>
     
 
@@ -4406,7 +4407,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="struct_commands_arguments_Argument.js.html">struct/commands/arguments/Argument.js</a>, <a href="struct_commands_arguments_Argument.js.html#line637">line 637</a>
+        <a href="struct_commands_arguments_Argument.js.html">struct/commands/arguments/Argument.js</a>, <a href="struct_commands_arguments_Argument.js.html#line638">line 638</a>
     </li></ul></dd>
     
 
@@ -4711,7 +4712,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="struct_commands_arguments_Argument.js.html">struct/commands/arguments/Argument.js</a>, <a href="struct_commands_arguments_Argument.js.html#line630">line 630</a>
+        <a href="struct_commands_arguments_Argument.js.html">struct/commands/arguments/Argument.js</a>, <a href="struct_commands_arguments_Argument.js.html#line631">line 631</a>
     </li></ul></dd>
     
 
@@ -6145,7 +6146,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="struct_commands_arguments_Argument.js.html">struct/commands/arguments/Argument.js</a>, <a href="struct_commands_arguments_Argument.js.html#line654">line 654</a>
+        <a href="struct_commands_arguments_Argument.js.html">struct/commands/arguments/Argument.js</a>, <a href="struct_commands_arguments_Argument.js.html#line655">line 655</a>
     </li></ul></dd>
     
 
@@ -6574,7 +6575,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="struct_commands_arguments_Argument.js.html">struct/commands/arguments/Argument.js</a>, <a href="struct_commands_arguments_Argument.js.html#line645">line 645</a>
+        <a href="struct_commands_arguments_Argument.js.html">struct/commands/arguments/Argument.js</a>, <a href="struct_commands_arguments_Argument.js.html#line646">line 646</a>
     </li></ul></dd>
     
 
@@ -6909,7 +6910,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="struct_commands_arguments_Argument.js.html">struct/commands/arguments/Argument.js</a>, <a href="struct_commands_arguments_Argument.js.html#line662">line 662</a>
+        <a href="struct_commands_arguments_Argument.js.html">struct/commands/arguments/Argument.js</a>, <a href="struct_commands_arguments_Argument.js.html#line663">line 663</a>
     </li></ul></dd>
     
 
@@ -7119,7 +7120,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="struct_commands_arguments_Argument.js.html">struct/commands/arguments/Argument.js</a>, <a href="struct_commands_arguments_Argument.js.html#line671">line 671</a>
+        <a href="struct_commands_arguments_Argument.js.html">struct/commands/arguments/Argument.js</a>, <a href="struct_commands_arguments_Argument.js.html#line672">line 672</a>
     </li></ul></dd>
     
 
